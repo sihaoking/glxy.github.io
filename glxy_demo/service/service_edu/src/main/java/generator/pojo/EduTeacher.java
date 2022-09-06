@@ -7,7 +7,8 @@ import java.util.Date;
 import lombok.Data;
 
 /**
- * 讲师
+ * 教师实体类
+ * @author yyds
  * @TableName edu_teacher
  */
 @TableName(value ="edu_teacher")
