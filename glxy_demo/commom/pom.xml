@@ -11,6 +11,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>service_base</module>
+        <module>common_util</module>
     </modules>
     <artifactId>commom</artifactId>
     <properties>
