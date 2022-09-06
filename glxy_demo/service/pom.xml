@@ -15,6 +15,12 @@
     <groupId>com.sh</groupId>
     <artifactId>service</artifactId>
     <dependencies>
+        <!--swagger-->
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>service_base</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
