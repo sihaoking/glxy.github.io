@@ -27,9 +27,20 @@ import java.util.Map;
 @Api("教师控制类")
 @RestController
 @Slf4j
+@CrossOrigin
+@RequestMapping("/eduTeacher")
 public class EduTeacherController {
     @Autowired
     private EduTeacherService eduTeacherService;
+    @ApiOperation(value = "教师登录接口")
+    @PostMapping("user/login")
+    public R eduTeacherLogin(){
+        return R.ok().data("token","admin");
+    }
+    @GetMapping("user/info")
+    public R getDeuTeacherInfo(){
+        return R.ok().data("name","zs").data("avatar","photo");
+    }
 
     @ApiOperation(value = "分页查询教师列表")
     @GetMapping("getEduTeacherByPage/{current}/{limit}")

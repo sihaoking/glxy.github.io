@@ -27,6 +27,7 @@
         <mysql.version>8.0.22</mysql.version>
         <junit.version>4.13.2</junit.version>
         <redis.version>2.5.12</redis.version>
+        <devtools.version>2.5.12</devtools.version>
 
     </properties>
 
@@ -64,6 +65,11 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-data-redis</artifactId>
                 <version>${redis.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-devtools</artifactId>
+                <version>${devtools.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
